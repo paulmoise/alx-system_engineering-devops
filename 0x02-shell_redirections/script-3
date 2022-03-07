@@ -1,7 +1,7 @@
 #!/bin/bash
 echo '#!/bin/bash' > 3-twofiles
-echo 'cat /etc/passwd' && 'cat /etc/hosts' >> 3-twofiles 
-chmod u+x 2-hellofile
+echo 'cat /etc/passwd && cat /etc/hosts' >> 3-twofiles 
+chmod u+x 3-twofiles
 git add .
 git commit -m '3-twofiles'
 git push
