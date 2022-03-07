@@ -1,0 +1,7 @@
+#!/bin/bash
+echo '#!/bin/bash' > 4-lastlines
+echo 'tail -10 /etc/passwd' >> 4-lastlines
+chmod u+x 4-lastlines
+git add .
+git commit -m '4-lastlines'
+git push
