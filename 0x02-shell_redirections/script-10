@@ -1,6 +1,6 @@
 #!/bin/bash
 echo '#!/bin/bash' > 103-the_biggest_fan
-echo 'tail -n +2 | cut -f1 | sort | uniq -c | sort -nr -k 1,1 | cut -c 9- | head -11' >> 103-the_biggest fan
+echo 'tail -n +2 | cut -f1 | sort | uniq -c | sort -nr -k 1,1 | cut -c 9- | hea:x -11' >> 103-the_biggest fan
 >> 103-the_biggest_fan
 chmod u+x 103-the_biggest_fan
 git add .
