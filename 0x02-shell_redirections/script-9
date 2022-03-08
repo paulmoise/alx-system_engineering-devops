@@ -1,0 +1,7 @@
+#!/bin/bash
+echo '#!/bin/bash' > 9-duplicate_last_line
+echo "tail -n 1 iacta >> iacta" >> 9-duplicate_last_line
+chmod u+x 9-duplicate_last_line
+git add .
+git commit -m '9-duplicate_last_line'
+git push
