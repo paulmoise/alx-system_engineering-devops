@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 101-gifs
-echo 'find . -type f -name "*.gif" -printf "%f\n"| rev | cut -d '.' -f2- | rev | LC_ALL=C sort -f'  >> 101-gifs
-chmod u+x 101-gifs
+echo '#!/bin/bash' > 102-acrostic
+echo 'echo -ne $(cut -c-1 | tr -d '\n')'\n''  >> 102-acrostic
+chmod u+x 102-acrostic
 git add .
-git commit -m '101-gifs'
+git commit -m '102-acrostic'
 git push
