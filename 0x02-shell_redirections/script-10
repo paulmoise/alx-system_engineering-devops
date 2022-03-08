@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 21-reverse
-echo "rev"  >> 21-reverse
-chmod u+x 21-reverse
+echo '#!/bin/bash' > 22-users_and_homes
+echo "cut -d":" --fields=1,6 /etc/passwd | sort"  >> 22-users_and_homes
+chmod u+x 22-users_and_homes
 git add .
-git commit -m '21-reverse'
+git commit -m '22-users_and_homes'
 git push
