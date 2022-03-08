@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 10-no_more_js
-echo 'find . -name "*.js" -type f -delete' >> 10-no_more_js
-chmod u+x 10-no_more_js
+echo '#!/bin/bash' > 11-directories
+echo 'find . -mindepth 1 -type d | wc -l' >> 11-directories
+chmod u+x 11-directories
 git add .
-git commit -m '10-no_more_js'
+git commit -m '11-directories'
 git push
