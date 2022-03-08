@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 13-unique
-echo 'sort | uniq -u' >> 13-unique
-chmod u+x 13-unique
+echo '#!/bin/bash' > 14-findthatword
+echo 'grep root /etc/passwd' >> 14-findthatword
+chmod u+x 14-findthatword
 git add .
-git commit -m '13-unique'
+git commit -m '14-findthatword'
 git push
