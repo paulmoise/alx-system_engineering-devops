@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 16-whatsnext
-echo 'cat /etc/passwd | grep -A 3 "root"' >> 16-whatsnext
-chmod u+x 16-whatsnext
+echo '#!/bin/bash' > 18-letteronly
+echo 'grep -v bin /etc/passwd'  >> 18-letteronly
+chmod u+x 18-letteronly
 git add .
-git commit -m '16-whatsnext'
+git commit -m '18-letteronly'
 git push
