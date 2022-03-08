@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 11-directories
-echo 'find . -mindepth 1 -type d | wc -l' >> 11-directories
-chmod u+x 11-directories
+echo '#!/bin/bash' > 12-newest_files
+echo 'ls -t | head' >> 12-newest_files
+chmod u+x 12-newest_files
 git add .
-git commit -m '11-directories'
+git commit -m '12-newest_files'
 git push
