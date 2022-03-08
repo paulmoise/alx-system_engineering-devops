@@ -1,7 +1,7 @@
 #!/bin/bash
-echo '#!/bin/bash' > 18-letteronly
-echo 'grep ^[[:alpha:]]  /etc/ssh/sshd_config'  >> 18-letteronly
-chmod u+x 18-letteronly
+echo '#!/bin/bash' > 19-AZ
+echo "tr 'Ac' 'Ze'"  >> 19-AZ
+chmod u+x 19-AZ
 git add .
-git commit -m '18-letteronly'
+git commit -m '19-AZ'
 git push
