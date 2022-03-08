@@ -1,6 +1,6 @@
 #!/bin/bash
 echo '#!/bin/bash' > 18-letteronly
-echo 'grep -v bin /etc/passwd'  >> 18-letteronly
+echo 'grep ^[[:alpha:]]  /etc/ssh/sshd_config'  >> 18-letteronly
 chmod u+x 18-letteronly
 git add .
 git commit -m '18-letteronly'
