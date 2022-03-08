@@ -1,0 +1,7 @@
+#!/bin/bash
+echo '#!/bin/bash' > filename
+echo 'anwser' >> filename
+chmod u+x filename
+git add .
+git commit -m 'filename'
+git push
