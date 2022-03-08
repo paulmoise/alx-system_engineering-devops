@@ -1,7 +1,0 @@
-#!/bin/bash
-echo '#!/bin/bash' > 0-alias
-echo 'alias ls=rm *' >> 0-alias
-chmod u+x 0-alias
-git add .
-git commit -m '0-alias'
-git push
