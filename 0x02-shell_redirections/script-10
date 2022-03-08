@@ -1,7 +1,7 @@
 #!/bin/bash
 echo '#!/bin/bash' > 15-countthatword
 echo 'grep -c bin /etc/passwd' >> 15-countthatword
-chmod u+x 14-findthatword
+chmod u+x 15-countthatword
 git add .
 git commit -m '15-countthatword'
 git push
