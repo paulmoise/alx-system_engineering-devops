@@ -1,7 +1,8 @@
 #!/bin/bash
-echo '#!/bin/bash' > 100-empty_casks
-echo 'find . -empty -printf "%f\n"'  >> 100-empty_casks
-chmod u+x 100-empty_casks
+echo '#!/bin/bash' > 101-gifs
+echo '
+find . -type f -name "*.gif" -printf "%f\n"| rev | cut -d '.' -f2- | rev | LC_ALL=C sort -f'  >> 101-gifs
+chmod u+x 101-gifs
 git add .
-git commit -m '100-empty_casks'
+git commit -m '101-gifs'
 git push
