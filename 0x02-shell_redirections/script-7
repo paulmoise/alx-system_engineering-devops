@@ -1,7 +1,0 @@
-#!/bin/bash
-echo '#!/bin/bash' > 7-file
-echo "echo \"\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)" >> 7-file
-chmod u+x 7-file
-git add .
-git commit -m '7-file'
-git push

@@ -1,7 +1,0 @@
-#!/bin/bash
-echo '#!/bin/bash' > 2-hellofile
-echo 'cat /etc/passwd' >> 2-hellofile 
-chmod u+x 2-hellofile
-git add .
-git commit -m '2-hellofile'
-git push

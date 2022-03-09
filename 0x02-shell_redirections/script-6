@@ -1,7 +1,0 @@
-#!/bin/bash
-echo '#!/bin/bash' > 6-third_line
-echo 'head -n 3 iacta | tail -1' >> 6-third_line
-chmod u+x 6-third_line
-git add .
-git commit -m '6-third_line'
-git push
