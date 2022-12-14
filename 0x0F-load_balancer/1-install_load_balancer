@@ -13,7 +13,7 @@ frontend hbnb-lb_front
         default_backend hbnb-lb_back
 backend hbnb-lb_back
         balance roundrobin
-        server 4584-web-01 54.88.46.15:80 check
+        server 4584-web-01 54.88.246.15:80 check
         server 4584-web-02 54.86.33.48:80 check
 " >> /etc/haproxy/haproxy.cfg
 
